@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "File Uploader";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/home.css">
+
+<main>
+    <div class="box header">
+        <h1>
+            <span id="page-title">File Uploader</span>
+        </h1>
+    </div>
+
+    <div class="box content">
+        <hr />
+        <h2>Upload files</h2>
+
+        <div>
+            <form action="/api/Files" class="dropzone needsclick dz-clickable" id="file-upload" method="post" enctype="multipart/form-data">
+                <div class="dz-message needsclick">
+                    <span class="note needsclick">
+                        Drop files here or click to upload.
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <h2>Uploaded files</h2>
+
+        <ul id="fileList" style="list-style-type: none;">
+            <li>No files available for download.</li>
+        </ul>
+    </div>
+</main>
+
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.js"></script>
+    <script src="~/js/home.js" type="text/javascript"></script>
+}

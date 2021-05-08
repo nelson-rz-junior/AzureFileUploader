@@ -1,0 +1,32 @@
+﻿html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    margin: 20px;
+}
+
+#gallery-note {
+    font-size: smaller
+}
+
+.dropzone {
+    border: 2px dashed #0087F7;
+    background: #F0F8FF;
+    margin: 25px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+    .dropzone .dz-message {
+        text-align: center;
+        margin: 2em 0;
+    }
+
+        .dropzone .dz-message .note {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+            display: block;
+            margin-top: 2.5rem;
+        }
