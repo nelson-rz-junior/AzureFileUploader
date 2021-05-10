@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace AzureFileUploader.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class FilesController : ControllerBase
     {
         private const int MaxFilenameLength = 50;
